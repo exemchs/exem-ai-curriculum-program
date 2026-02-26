@@ -11,7 +11,7 @@ EXEM 구성원을 위한 5일 Claude Code 트레이닝 프로그램입니다.
 
 ```bash
 # 1. 이 프로젝트를 클론합니다
-git clone https://github.com/pyhsudochs/exem-ai-curriculum-program.git
+git clone https://github.com/exemchs/exem-ai-curriculum-program.git
 
 # 2. 프로젝트 폴더로 이동합니다
 cd exem-ai-curriculum-program
