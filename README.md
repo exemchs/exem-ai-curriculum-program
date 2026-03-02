@@ -8,31 +8,44 @@ EXEM 구성원을 위한 5일 Claude Code 트레이닝 프로그램입니다.
 ## 사전 준비 (교육 담당자가 확인)
 
 교육 시작 전, 참가자의 Anthropic 계정이 준비되어야 합니다.
+**무료 플랜으로는 Claude Code를 사용할 수 없습니다.**
 
 | 플랜 | 비용 | 비고 |
 |------|------|------|
 | Claude Max | $100/월 | 권장. 교육 중 사용량 제한에 걸리지 않음 |
 | Claude Pro | $20/월 | 가능하나 사용량 제한이 타이트함 |
-| API Key (종량제) | 사용량 과금 | 비개발자에게 설정이 복잡하여 비권장 |
+| Teams / Enterprise | 기업별 | SSO 지원, 관리자 설정 필요 |
 
 계정은 [claude.ai](https://claude.ai)에서 가입 후 구독합니다.
+
+### 시스템 요구사항
+
+| 항목 | 최소 요구 |
+|------|----------|
+| macOS | 13.0 (Ventura) 이상 |
+| Windows | 10 (1809) 이상 |
+| RAM | 4GB 이상 |
+| 네트워크 | 인터넷 연결 필수 |
 
 ---
 
 ## Step 1. Git 설치 (처음 한 번만)
 
-Git은 프로젝트를 다운로드하고, Claude Code가 내부적으로 사용하는 필수 도구입니다.
+Git은 프로젝트를 다운로드할 때 필요하고, Claude Code도 내부적으로 Git을 사용합니다.
 
 **Mac:**
-1. Cursor나 터미널(아무거나)을 열고 아래를 입력합니다
-2. `git --version` 입력 후 Enter
-3. 설치되어 있지 않으면 "Install Command Line Developer Tools" 팝업이 뜹니다
-4. **Install** 버튼 클릭 → 설치 완료까지 기다리기 (3~10분)
+1. Cursor나 터미널(아무거나)을 열고 `git --version`을 입력합니다
+2. 이미 설치되어 있으면 버전이 나옵니다 → Step 2로
+3. 설치되어 있지 않으면 **"Command Line Developer Tools를 설치하시겠습니까?"** 팝업이 뜹니다
+4. **설치** 버튼 클릭 → 완료까지 기다리기 (3~10분)
 
 > 팝업이 안 뜨면 터미널에 `xcode-select --install` 입력
 
 **Windows:**
-1. [git-scm.com](https://git-scm.com)에 접속합니다
+
+Windows에서는 **Git for Windows**가 필수입니다. Claude Code가 내부적으로 Git Bash를 사용합니다.
+
+1. [git-scm.com/downloads/win](https://git-scm.com/downloads/win)에 접속합니다
 2. **Download for Windows** 클릭 → 설치 파일 실행
 3. 설치 옵션은 모두 기본값으로 **Next** 클릭하면 됩니다
 
@@ -80,11 +93,7 @@ curl -fsSL https://claude.ai/install.sh | bash
 ```
 
 **Windows (PowerShell):**
-
-PowerShell 실행 정책 때문에 명령이 안 될 수 있습니다. 아래 두 줄을 순서대로 실행하세요.
-
 ```powershell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 irm https://claude.ai/install.ps1 | iex
 ```
 
@@ -145,12 +154,19 @@ Claude Code가 실행되면, 아래를 입력해서 1일차를 시작합니다.
 | 문제 | 해결 |
 |------|------|
 | `claude` 명령이 안 됨 | 터미널을 껐다 다시 열기. 그래도 안 되면 Claude Code 재설치 |
-| `git` 명령이 안 됨 | Mac: `xcode-select --install` / Windows: git-scm.com에서 설치 |
+| `git` 명령이 안 됨 (Mac) | `xcode-select --install`로 Command Line Developer Tools 설치 |
+| `git` 명령이 안 됨 (Windows) | [git-scm.com/downloads/win](https://git-scm.com/downloads/win)에서 Git for Windows 설치 |
 | Mac 보안 경고 ("개발자 확인 불가") | 시스템 설정 → 개인 정보 보호 및 보안 → "확인 없이 열기" |
-| Windows PowerShell 스크립트 차단 | `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` 실행 |
-| 로그인 후 "사용 불가" | Anthropic 구독 플랜(Pro/Max) 활성화 여부 확인 |
+| 로그인 후 사용 불가 | 무료 플랜은 Claude Code 지원 안 됨. Pro/Max 구독 필요 |
 | `npx` 명령이 안 됨 (Day 2) | Node.js 미설치. nodejs.org에서 LTS 설치 |
+| Windows에서 Git Bash 못 찾는 오류 | settings.json에 `CLAUDE_CODE_GIT_BASH_PATH` 설정 (공식 문서 참고) |
 
 ## 문의
 
 문제가 발생하면 조현서(CX그룹)에게 연락하세요.
+
+## 참고
+
+- [Claude Code 공식 문서](https://code.claude.com/docs/ko)
+- [Claude Code 설치 가이드](https://code.claude.com/docs/en/setup)
+- [Claude Code 터미널 가이드](https://code.claude.com/docs/en/terminal-guide) (터미널이 처음인 분)
