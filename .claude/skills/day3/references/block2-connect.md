@@ -22,11 +22,11 @@ claude mcp add [서버이름] -- [실행 명령어]
   ⭐⭐⭐ Google Calendar — 전 직원 사용, 일정 관리
   ⭐⭐   GitHub — 엔지니어 추천, 코드 관리
   ⭐⭐   Mattermost — 채널 메시지 수집
-  ⭐     ClickUp — API 불안정, 체험 수준만 권장
+  ⭐     ClickUp — 제품 안정성 이슈, 비권장
 
-💡 EXEM 참고: ClickUp MCP는 연결은 가능하지만,
-   ClickUp API 자체의 안정성 이슈로 실무 활용은 어렵습니다.
-   MCP 개념을 이해하는 데 초점을 맞추세요.
+💡 EXEM 참고: ClickUp은 제품 자체의 안정성 이슈로
+   MCP 연결을 권장하지 않습니다.
+   Notion이나 Google Calendar로 실습하세요.
 
 
 ### 연결 예시: Notion
@@ -93,25 +93,3 @@ Google Calendar MCP 서버를 연결하고 싶어. 단계별로 안내해줘.
 - Calendar: "내 캘린더에 오늘 일정 뭐 있어?"
 
 ───────────────────────────────
-
-
-## QUIZ
-
-```json
-{
-  "questions": [{
-    "question": "MCP 서버를 추가하는 명령어는?",
-    "header": "MCP 명령어",
-    "options": [
-      {"label": "claude install mcp", "description": "install이 아닙니다"},
-      {"label": "claude mcp add", "description": "정답! claude mcp add [서버이름] 형식입니다"},
-      {"label": "/mcp add", "description": "/mcp는 목록 확인용입니다"},
-      {"label": "mcp connect", "description": "claude 명령어를 통해 추가합니다"}
-    ],
-    "multiSelect": false
-  }]
-}
-```
-
-> 정답: "claude mcp add"
-> `claude mcp add [서버이름] -- [실행 명령어]` 형식으로 서버를 추가합니다.

@@ -1,10 +1,23 @@
-# Block 3: CLAUDE.md — 내 비서 세팅
+# Block 4: CLAUDE.md — 내 비서 세팅
 
 
 ## EXPLAIN
 
-## [3] CLAUDE.md — 내 비서 세팅
+## [4] CLAUDE.md — 내 비서 세팅
 ═══════════════════════════════
+
+세 번째 레벨입니다.
+"매번 프롬프트를 잘 쓰는 것보다, 시스템을 설계하는 게 더 중요하다."
+
+CO-STAR(Lv.1)과 CRIT(Lv.2)는 매번 잘 써야 합니다.
+CLAUDE.md는 한 번 세팅하면 매번 자동으로 적용됩니다.
+
+  CO-STAR   매번 구조를 일일이 작성
+  CRIT      매번 "질문 먼저 해줘"를 타이핑
+  CLAUDE.md 한 번 적으면 자동으로 적용 ✨
+
+Phil Schmid(Hugging Face 엔지니어)의 말:
+"대부분의 에이전트 실패는 모델 실패가 아니라 컨텍스트 실패다."
 
 CLAUDE.md는 Claude Code의 **영구 기억**입니다.
 한 번 적으면 매번 자동으로 읽습니다.
@@ -79,25 +92,3 @@ Claude에게 이렇게 말해보세요:
    내일 다시 와도 Claude는 당신을 기억합니다.
 
 ───────────────────────────────
-
-
-## QUIZ
-
-```json
-{
-  "questions": [{
-    "question": "CLAUDE.md에 적으면 안 되는 것은?",
-    "header": "주의사항",
-    "options": [
-      {"label": "내 이름과 팀명", "description": "이건 오히려 적어야 합니다"},
-      {"label": "비밀번호나 API 키", "description": "정답! 민감 정보는 CLAUDE.md에 적으면 안 됩니다"},
-      {"label": "응답 스타일 선호", "description": "이건 적극적으로 적어야 합니다"},
-      {"label": "자주 하는 실수 방지 규칙", "description": "이것이야말로 CLAUDE.md의 핵심입니다"}
-    ],
-    "multiSelect": false
-  }]
-}
-```
-
-> 정답: "비밀번호나 API 키"
-> CLAUDE.md는 프로젝트 내 모든 사람이 볼 수 있습니다. 민감 정보는 절대 넣지 마세요.

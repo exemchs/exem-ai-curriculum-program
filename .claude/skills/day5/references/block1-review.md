@@ -61,25 +61,3 @@ Claude에게 요청해봅시다:
    "이 정도를 만들었구나!"를 체감하는 시간입니다.
 
 ───────────────────────────────
-
-
-## QUIZ
-
-```json
-{
-  "questions": [{
-    "question": "5일 중 가장 임팩트 있었던 것은?",
-    "header": "5일 회고",
-    "options": [
-      {"label": "CLAUDE.md로 기억 유지 (Day 1)", "description": "한번 쓰면 영구 기억, 강력하죠!"},
-      {"label": "업무 위임 프레임워크 (Day 2)", "description": "AI와 일하는 구조를 배웠군요!"},
-      {"label": "MCP로 도구 연결 (Day 3)", "description": "AI의 한계를 넘는 순간이었죠!"},
-      {"label": "Skill + 검증 루프 (Day 4)", "description": "반복 가능한 자동화, 가장 실용적이죠!"}
-    ],
-    "multiSelect": false
-  }]
-}
-```
-
-> 정답 없는 회고 문항입니다.
-> 각자에게 가장 유용했던 것이 다를 수 있습니다. 그것이 핵심입니다.

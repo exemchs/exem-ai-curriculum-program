@@ -68,25 +68,3 @@ AI를 잘 쓰는 능력의 핵심이라는 뜻입니다.
    다르다면 왜 다른지 생각해보세요.
 
 ───────────────────────────────
-
-
-## QUIZ
-
-```json
-{
-  "questions": [{
-    "question": "다음 중 AI에게 'Delegate(위임)'하기 가장 적합한 업무는?",
-    "header": "위임 분류",
-    "options": [
-      {"label": "팀원과의 1:1 면담", "description": "감정과 판단이 필요한 Just Me 업무입니다"},
-      {"label": "경쟁사 제품 비교 보고서 초안", "description": "정답! 리서치+정리는 Delegate의 대표 업무입니다"},
-      {"label": "매주 같은 양식의 주간보고서 생성", "description": "이건 Automate에 더 가깝습니다"},
-      {"label": "프로젝트 최종 의사결정", "description": "최종 판단은 사람이 해야 합니다"}
-    ],
-    "multiSelect": false
-  }]
-}
-```
-
-> 정답: "경쟁사 제품 비교 보고서 초안"
-> 리서치와 정리는 AI가 잘하지만, 최종 판단은 내가 해야 합니다. 이것이 Delegate.

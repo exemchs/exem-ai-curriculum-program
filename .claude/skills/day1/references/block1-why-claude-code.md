@@ -59,25 +59,3 @@ README.md를 읽고 3줄로 요약해줘
    웹 Chat으로는 어려운 일들을 하게 됩니다.
 
 ───────────────────────────────
-
-
-## QUIZ
-
-```json
-{
-  "questions": [{
-    "question": "Claude Code가 웹 ChatGPT/Claude와 가장 다른 점은 무엇일까요?",
-    "header": "핵심 차이",
-    "options": [
-      {"label": "답변 속도가 더 빠르다", "description": "속도도 다를 수 있지만 핵심은 아닙니다"},
-      {"label": "내 파일을 직접 읽고 수정할 수 있다", "description": "정답! 내 컴퓨터에서 직접 동작합니다"},
-      {"label": "무료로 사용할 수 있다", "description": "Claude Code는 Pro/Max 구독이 필요합니다"},
-      {"label": "인터넷 검색이 가능하다", "description": "웹 Chat도 검색 가능합니다. Claude Code만의 차이는 아닙니다"}
-    ],
-    "multiSelect": false
-  }]
-}
-```
-
-> 정답: "내 파일을 직접 읽고 수정할 수 있다"
-> Claude Code의 핵심 가치는 내 환경에서 직접 동작한다는 것입니다.

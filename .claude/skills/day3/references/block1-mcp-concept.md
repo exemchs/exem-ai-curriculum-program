@@ -72,25 +72,3 @@ MCP가 뭔지 쉽게 설명해줘. 비유를 들어서.
 💡 다음 Block에서 실제로 MCP 서버를 연결합니다!
 
 ───────────────────────────────
-
-
-## QUIZ
-
-```json
-{
-  "questions": [{
-    "question": "MCP가 해결하는 핵심 문제는 무엇일까요?",
-    "header": "MCP 핵심",
-    "options": [
-      {"label": "AI의 추론 능력을 높인다", "description": "MCP는 추론 능력과는 관계없습니다"},
-      {"label": "AI와 외부 도구 사이의 연결", "description": "정답! AI에게 눈과 손을 달아주는 것입니다"},
-      {"label": "AI의 응답 속도를 빠르게 한다", "description": "속도와는 관계없습니다"},
-      {"label": "AI의 학습 데이터를 업데이트한다", "description": "학습 데이터를 바꾸는 것이 아닙니다"}
-    ],
-    "multiSelect": false
-  }]
-}
-```
-
-> 정답: "AI와 외부 도구 사이의 연결"
-> MCP는 AI를 더 똑똑하게 만드는 게 아니라, 더 많은 맥락을 제공합니다.
