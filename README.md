@@ -151,12 +151,8 @@ Claude가 진행 상황을 저장합니다. 이후 터미널을 닫아도 됩니
 
 다시 시작하고 싶을 때, 3단계면 됩니다.
 
-1. Cursor 열기 → **Terminal** → **New Terminal**
-2. 터미널에 입력:
-   ```bash
-   cd exem-ai-curriculum-program && claude
-   ```
-   > `cd`는 "이 폴더로 이동해"라는 뜻입니다. 폴더를 다른 위치에 저장했다면 `cd` 뒤의 경로를 그 위치로 바꿔주세요.
+1. Cursor 열기 → **File** → **Open Folder** → exem-ai-curriculum-program 선택
+2. **Terminal** → **New Terminal** → 터미널에 `claude` 입력
 3. Claude에게 입력:
    ```
    > 이어서 해줘
