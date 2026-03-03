@@ -119,22 +119,22 @@ git clone https://github.com/exemchs/exem-ai-curriculum-program.git && cd exem-a
 | Day | 주제 | 내용 | 시간 |
 |-----|------|------|------|
 | 0 | 오리엔테이션 | Cursor 둘러보기, Claude와 첫 대화, 멈추기/이어하기 | ~5분 |
-| 1 | 시작하기 | Claude Code와 첫 만남, CLAUDE.md 만들기, 핵심 기능 체험 | ~1시간 |
-| 2 | 외부 도구 연결 | MCP란?, Notion·Mattermost·Google Calendar 연결, Context Sync 스킬 뼈대 | ~1시간 |
-| 3 | 나만의 스킬 | Subagent 병렬 처리, 출력 포맷 설정, 스킬 실행 + 검증 | ~1시간 |
-| 4 | 실무 적용 | Session Wrap 스킬, Content Digest 스킬, Multi-agent 패턴 | ~1시간 |
-| 5 | 졸업 | 5일간 배운 것 정리, 졸업 프로젝트 제작, 업무 적용 계획 | ~1시간 |
+| 1 | AI에게 잘 시키는 법 | 컨텍스트 엔지니어링, CO-STAR, CRIT Interview, CLAUDE.md | ~1시간 |
+| 2 | 내 업무를 AI로 해보기 | 위임 프레임워크(Just Me/Delegate/Automate), AI 신뢰도 | ~1시간 |
+| 3 | 도구 연결하기 | MCP 개념, Notion·Calendar 연결 실습, 도구 활용 | ~1시간 |
+| 4 | 자동화하기 | Skill 제작, 검증 루프 설계, 반복 가능한 워크플로우 | ~1시간 |
+| 5 | 졸업 | 5일간 정리, 졸업 프로젝트 완성, 팀 공유 | ~1시간 |
 
 Day 0은 프로젝트를 열면 자동으로 시작됩니다.
-Day 1부터는 Claude에게 `/day1-start` 같은 명령어를 입력하면 됩니다.
+Day 1부터는 Claude에게 `/day1` 같은 명령어를 입력하면 됩니다.
 
 | Day | 명령어 |
 |-----|--------|
-| 1 | `/day1-start` |
-| 2 | `/day2-connect` |
-| 3 | `/day3-skill` |
-| 4 | `/day4-apply` |
-| 5 | `/day5-graduate` |
+| 1 | `/day1` |
+| 2 | `/day2` |
+| 3 | `/day3` |
+| 4 | `/day4` |
+| 5 | `/day5` |
 
 ---
 
