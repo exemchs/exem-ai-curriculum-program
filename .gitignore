@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (수강생이 MCP 서버 테스트 시 생성될 수 있음)
+node_modules/
+
+# Reports (수강생이 스킬 실행 시 생성)
+reports/
+
+# Claude Code auto-memory (수강생 개인 메모리)
+.claude/memory/
